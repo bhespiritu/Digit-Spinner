@@ -1,5 +1,6 @@
 import React from 'react';
 import {Mosaic, MosaicBranch, MosaicWindow, RemoveButton} from "react-mosaic-component";
+import { BilliardsPanel } from './billiards';
 
 import "react-mosaic-component/react-mosaic-component.css";
 import '@blueprintjs/core/lib/css/blueprint.css';
@@ -39,7 +40,7 @@ class App extends React.PureComponent<{}, AppState> {
                             title={ELEMENT_MAP[id]}
                             toolbarControls={[<RemoveButton/>]}
                         >
-                            <h1>{ELEMENT_MAP[id]}</h1>
+                            <BilliardsPanel />
                         </MosaicWindow>
                     )}
                     initialValue={{
